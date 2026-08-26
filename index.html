@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
    
         //GET computer choice
@@ -19,10 +20,6 @@
         }
        
         getRandomInt();  
-         
-        //IF number between 0 and 10 choose Rock
-        //IF number between 11 and 20 choose Paper
-        //IF number between 21 and 30 choose Scissor
 
         if (random >= 0 && random <=10) {
             return "Rock"
@@ -34,22 +31,31 @@
        
 
         //GET user Human choice
-        //
-
-        let userChoice = prompt(What are your choice? Rock? Paper? or Scissor?);
-
-        if (userChoice == "Rock"){
-            return "Rock"
-        } else if (userChoice == "Paper") {
-            return "Paper"
-        } else if (userChoice == "Scissor"){
-            return "Scissor"
-        }
+        function getHumanChoice () {
         
+        let humanChoice = "";
 
-        //console.log(getComputerChoice());
+        let userChoice = window.prompt("What are your choice? Rock, Paper or Scissor");
 
+        if (userChoice.toLowerCase() == "rock"){
+            return humanChoice = "Rock";
+        } else if (userChoice.toLowerCase() == "paper") {
+            return humanChoice = "Paper";
+        } else if (userChoice.toLowerCase() == "scissor"){
+            return humanChoice = "Scissor";
+        } }
+        
+        //Keep track of the score
 
+        let humanScore = 0, computerScore = 0;
+
+        function playRound(humanChoice , computerChoice) {
+            
+        }
+
+        console.log(getComputerChoice());
+        console.log(getHumanChoice());
+        playRound(getComputerChoice(), getHumanChoice());
     </script>
 </body>
 </html>
