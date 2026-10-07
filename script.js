@@ -33,7 +33,7 @@
             return humanChoice = "Paper";
         } else if (userChoice.toLowerCase() == "scissor"){
             return humanChoice = "Scissor";
-        } }
+        } } 
         
         //Play the game
         function playGame () {
